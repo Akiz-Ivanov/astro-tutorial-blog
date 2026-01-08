@@ -1,20 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Home Page";
 ---
 
-<Layout title={pageTitle}>
-	<Header />
-
-	<h1>{pageTitle}</h1>
-
-	<Footer />
-
-	<script>
-		import "../scripts/menu.js";
-	</script>
-</Layout>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>My awesome blog subtitle</h2>
+</BaseLayout>
